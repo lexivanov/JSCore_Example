@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EPAM JS Core</title>
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+  <div class="tasks-wrapper">
+    <div class="task-name elipsis">
+      Calculator
+    </div>
+    <div class="task-container calculator">
+      <input type="text" class="task-input calculator-input" placeholder="Еnter your expression">
+      <div class="task-output calculator-output elipsis">Result</div>
+      <button class="task-button calculator-button elipsis" >Start</button>
+    </div>
+    <div class="task-name elipsis">
+      Delete repeated symbols
+    </div>
+    <div class="task-container repeat-cleaner">
+      <input type="text" class="task-input repeat-cleaner-input" placeholder="Еnter your string">
+      <div class="task-output repeat-cleaner-output elipsis">Result</div>
+      <button class="task-button repeat-cleaner-button elipsis">Start</button>
+    </div>
+    <div class="task-name elipsis">
+      Date formater
+    </div>
+    <div class="task-container date-formater">
+      <input type="datetime-local" step="1" class="task-input date-input">
+      <div class="date-format-container">
+        <input type="text" class="task-input date-format-input" placeholder="Еnter your date format">
+        <select class="task-input localization-selector">
+          <option value="en">English</option>
+          <option value="ru">Russian</option>
+          <option value="emoji">Emoji</option>
+        </select>
+      </div>
+      <div class="task-output date-output elipsis">Result</div>
+      <button class="task-button date-formater-button elipsis">Start</button>
+    </div>
+  </div>
+
+  <script src="./scripts/Calculator.js"></script>
+  <script src="./scripts/LetterСlipper.js"></script>
+  <script src="./scripts/DateFormatter.js"></script>
+</body>
+
+</html>
